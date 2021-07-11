@@ -4,7 +4,6 @@ const app = express();
 const path = require("path");
 const cors = require("cors");
 const http = require("http").Server(app);
-const sendMail = require("./controllers/mail");
 const log = console.log;
 require("dotenv").config({
   path: __dirname + "/.env",
@@ -14,13 +13,13 @@ console.log(process.env.MAILGUN_DOMAIN)
 // Variables
 const port = process.env.PORT || 5000;
 
-// if (process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
   // Page routing.
   app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "build", "index.html"));
   });
-// }
+}
 
 // Configuration middleware
 app.use(express.json());
