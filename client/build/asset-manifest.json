@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a2d1f4f5.chunk.css",
-    "main.js": "/static/js/main.f73d5ed6.chunk.js",
-    "main.js.map": "/static/js/main.f73d5ed6.chunk.js.map",
+    "main.js": "/static/js/main.0b9055b6.chunk.js",
+    "main.js.map": "/static/js/main.0b9055b6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5ebc510a.js",
     "runtime-main.js.map": "/static/js/runtime-main.5ebc510a.js.map",
     "static/css/2.d45d6843.chunk.css": "/static/css/2.d45d6843.chunk.css",
@@ -12,6 +12,7 @@
     "static/css/2.d45d6843.chunk.css.map": "/static/css/2.d45d6843.chunk.css.map",
     "static/css/main.a2d1f4f5.chunk.css.map": "/static/css/main.a2d1f4f5.chunk.css.map",
     "static/js/2.0faa2a7d.chunk.js.LICENSE.txt": "/static/js/2.0faa2a7d.chunk.js.LICENSE.txt",
+    "static/media/Thanasorn Resume(full).1b63d333.pdf": "/static/media/Thanasorn Resume(full).1b63d333.pdf",
     "static/media/miat.5e0c9431.PNG": "/static/media/miat.5e0c9431.PNG",
     "static/media/miatLogo.c734fa1c.PNG": "/static/media/miatLogo.c734fa1c.PNG"
   },
@@ -20,6 +21,6 @@
     "static/css/2.d45d6843.chunk.css",
     "static/js/2.0faa2a7d.chunk.js",
     "static/css/main.a2d1f4f5.chunk.css",
-    "static/js/main.f73d5ed6.chunk.js"
+    "static/js/main.0b9055b6.chunk.js"
   ]
 }

@@ -9,6 +9,7 @@ import {
 // import profileImg from "../assets/images/profileImg.png";
 import miat from "../assets/images/miat.PNG";
 import maitLogo from "../assets/images/miatLogo.PNG";
+import resume from "../assets/images/Thanasorn Resume(full).pdf";
 
 export const resumeData = {
   name: "Thanasorn Limsangaworanan",
@@ -19,8 +20,9 @@ export const resumeData = {
   postalNumber: "90230",
   profile_img: "https://i.ibb.co/tX3zwrk/profile-Img.png",
   resume_download: {
-    link: "https://doc-0g-9g-docs.googleusercontent.com/docs/securesc/m054crnegrhk8lnbga8so7t6sq5tc5bn/1cep3iva1mcr52i3vsqm8nfcv552lrmb/1625308650000/04402688283050942872/04402688283050942872/14_mBozYgDl4-y8_rqMRkGz0Q168DN0vV?e=download&authuser=1&nonce=8ek0nu6b5rpa8&user=04402688283050942872&hash=rjlvadhm65v8kb8iktbqogp0kpaumq49",
     name: "Thanasorn Resume(full).pdf",
+    link: resume,
+
   },
   about_me:
     "Entry-level programmer with hard-working, flexible, and problem-solving skill. Interested in web or mobile application development.",
