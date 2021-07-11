@@ -15,78 +15,78 @@ const useStyle = makeStyles({
 const Contactme = () => {
   const classes = useStyle();
 
-  const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [disableBtn, setDisableBtn] = useState(false);
-  const [submitResponse, setSubmitResponse] = useState({
-    status: false,
-    message: "Message sent.",
-  });
-  const [isFormEmpty, setIsFormEmpty] = useState(true);
-  const [isWrongEmail, setIsWrongEmail] = useState(false);
+  // const [name, setName] = useState("");
+  // const [subject, setSubject] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const [disableBtn, setDisableBtn] = useState(false);
+  // const [submitResponse, setSubmitResponse] = useState({
+  //   status: false,
+  //   message: "Message sent.",
+  // });
+  // const [isFormEmpty, setIsFormEmpty] = useState(true);
+  // const [isWrongEmail, setIsWrongEmail] = useState(false);
 
-  const resetForm = () => {
-    setEmail("");
-    setMessage("");
-    setSubject("");
-    setName("");
-    setDisableBtn(false);
-    setTimeout(() => {
-      setSubmitResponse(false);
-    }, 3000);
-  };
+  // const resetForm = () => {
+  //   setEmail("");
+  //   setMessage("");
+  //   setSubject("");
+  //   setName("");
+  //   setDisableBtn(false);
+  //   setTimeout(() => {
+  //     setSubmitResponse(false);
+  //   }, 3000);
+  // };
 
-  const checkEmail = (email) => {
-    if (
-      !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-        email
-      )
-    )
-      return setIsWrongEmail(true);
-    setIsWrongEmail(false);
-  };
+  // const checkEmail = (email) => {
+  //   if (
+  //     !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+  //       email
+  //     )
+  //   )
+  //     return setIsWrongEmail(true);
+  //   setIsWrongEmail(false);
+  // };
 
-  // submit handler function
-  const submitHandler = async () => {
-    if (disableBtn) return;
-    if (isWrongEmail) return;
-    if (
-      [
-        subject.trim().length,
-        name.trim().length,
-        email.trim().length,
-        message.trim().length,
-      ].includes(0)
-    ) {
-      setSubmitResponse(false);
-      setIsFormEmpty(true);
-      return;
-    }
-    setDisableBtn(true);
-    setIsFormEmpty(false);
+  // // submit handler function
+  // const submitHandler = async () => {
+  //   if (disableBtn) return;
+  //   if (isWrongEmail) return;
+  //   if (
+  //     [
+  //       subject.trim().length,
+  //       name.trim().length,
+  //       email.trim().length,
+  //       message.trim().length,
+  //     ].includes(0)
+  //   ) {
+  //     setSubmitResponse(false);
+  //     setIsFormEmpty(true);
+  //     return;
+  //   }
+  //   setDisableBtn(true);
+  //   setIsFormEmpty(false);
 
-    const res = await formSent({ name, subject, email, message });
-    if (res) {
-      if (res.status !== 200 || !res.data.taskSuccess) {
-        return setSubmitResponse({
-          status: true,
-          message: "Fail to send message.",
-        });
-      }
+  //   const res = await formSent({ name, subject, email, message });
+  //   if (res) {
+  //     if (res.status !== 200 || !res.data.taskSuccess) {
+  //       return setSubmitResponse({
+  //         status: true,
+  //         message: "Fail to send message.",
+  //       });
+  //     }
 
-      resetForm();
-      setSubmitResponse({
-        status: true,
-        message: "Message sent.",
-      });
-    }
-  };
+  //     resetForm();
+  //     setSubmitResponse({
+  //       status: true,
+  //       message: "Message sent.",
+  //     });
+  //   }
+  // };
 
-  useEffect(() => {
-    setIsFormEmpty(false);
-  }, []);
+  // useEffect(() => {
+  //   setIsFormEmpty(false);
+  // }, []);
 
   return (
     <>
@@ -94,7 +94,7 @@ const Contactme = () => {
         {/* Contact form */}
         <Grid item>
           <Grid container className="section pb-3" spacing={10}>
-            <Grid item xs={12} lg={6}>
+            {/* <Grid item xs={12} lg={6}>
               <Grid container>
                 <Grid item>
                   <Grid item className="section-title mb-2">
@@ -166,7 +166,7 @@ const Contactme = () => {
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
+            </Grid> */}
 
             {/* Contact information */}
             <Grid item xs={12} lg={6}>
