@@ -9,7 +9,6 @@ require("dotenv").config({
   path: __dirname + "/.env",
 });
 
-console.log(process.env.MAILGUN_DOMAIN)
 // Variables
 const port = process.env.PORT || 5000;
 

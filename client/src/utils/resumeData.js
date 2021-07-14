@@ -9,7 +9,7 @@ import {
 // import profileImg from "../assets/images/profileImg.png";
 import miat from "../assets/images/miat.PNG";
 import maitLogo from "../assets/images/miatLogo.PNG";
-import resume from "../assets/images/Thanasorn Resume(full).pdf";
+import resume from "../assets/images/Thanasorn-resume.pdf";
 
 export const resumeData = {
   name: "Thanasorn Limsangaworanan",
@@ -20,7 +20,7 @@ export const resumeData = {
   postalNumber: "90230",
   profile_img: "https://i.ibb.co/tX3zwrk/profile-Img.png",
   resume_download: {
-    name: "Thanasorn Resume(full).pdf",
+    name: "Thanasorn-resume.pdf",
     link: resume,
 
   },
